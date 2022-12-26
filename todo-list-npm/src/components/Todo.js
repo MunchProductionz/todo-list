@@ -19,7 +19,8 @@ function Todo({ todo, toggleComplete, removeTodo }) {
                     textDecoration: todo.completed ? "line-through" : null
                 }}
             >
-                {todo.task}</li>
+                {todo.task}
+            </li>
             <button onClick={handleRemoveClick}>X</button>
         </div>
     );
