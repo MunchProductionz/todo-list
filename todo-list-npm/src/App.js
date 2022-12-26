@@ -8,6 +8,7 @@ const LOCAL_STORAGE_KEY = "todo-list-npm-todos";
 function App() {
   const [todos, setTodos] = useState([]);
 
+  // Does not work
   useEffect(() => {
     const storageTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
     if (storageTodos) {
