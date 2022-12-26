@@ -25,6 +25,7 @@ function App() {
     setTodos([todo, ...todos]);
   }
 
+  // Toggles complete on all listed todos
   function toggleComplete(id) {
     setTodos(
       todos.map(todo => {
@@ -39,6 +40,7 @@ function App() {
     );
   }
 
+  // Removes all listed todos
   function removeTodo(id) {
     setTodos(todos.filter(todo => todo.id !== id));
   }
